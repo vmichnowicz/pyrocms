@@ -70,5 +70,5 @@ $config['theme'] = NULL;
 */
 
 $config['theme_locations'] = array(
-	'public/themes/' => '../../'.config_item('public_root').'public/themes/'
+	'third_party/themes/' => '../../'.config_item('public_root').'third_party/themes/'
 );
