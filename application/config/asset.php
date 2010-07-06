@@ -12,7 +12,7 @@
 |
 */
 
-$config['asset_dir'] = 'public/assets/';
+$config['asset_dir'] = '../../public/assets/';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ $config['asset_url'] = config_item('base_url').'public/assets/';
 |
 */
 
-$config['theme_asset_dir'] = 'public/themes/';
+$config['theme_asset_dir'] = '../../public/themes/';
 
 /*
 |--------------------------------------------------------------------------
