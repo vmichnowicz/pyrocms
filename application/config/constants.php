@@ -43,7 +43,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 */
 
 // Local: localhost or local.example.com
-if(strpos($_SERVER['SERVER_NAME'], 'local.') !== FALSE || $_SERVER['SERVER_NAME'] == 'localhost')
+if(strpos($_SERVER['SERVER_NAME'], 'local.') !== FALSE || strpos($_SERVER['SERVER_NAME'], '.local') !== FALSE || $_SERVER['SERVER_NAME'] == 'localhost')
 {
   define('ENV', 'local');
 }
@@ -94,13 +94,23 @@ else
 	$base_uri = '/';
 }
 
+if(strrpos(substr(APPPATH, 0, -1), '/') !== FALSE)
+{
+	$relative_base = substr(APPPATH, 0, strrpos(substr(APPPATH, 0, -1), '/') + 1);
+}
+else
+{
+	$relative_base = '';
+}
+
 // Define these values to be used later on
 define('BASE_URL', $base_url);
 define('BASE_URI', $base_uri);
 define('APPPATH_URI', BASE_URI.APPPATH);
+define('REL_BASE', $relative_base);
 
 // We dont need these variables any more
-unset($base_uri, $base_url);
+unset($base_uri, $base_url, $relative_base);
 
 /*
 |--------------------------------------------------------------------------

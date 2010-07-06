@@ -2,6 +2,23 @@
 
 /*
 |--------------------------------------------------------------------------
+| Public Root
+|--------------------------------------------------------------------------
+|
+| The Relative path to your webroot from where the codeigniter and
+| application folders reside WITH a trailing slash:
+| 
+| If your public root is the same directory that the codeigniter and
+| application folders reside in, then leave this blank (the default).
+|
+|   Example:
+|	www/
+|
+*/
+$config['public_root'] = '';
+
+/*
+|--------------------------------------------------------------------------
 | Base Site URL
 |--------------------------------------------------------------------------
 |
