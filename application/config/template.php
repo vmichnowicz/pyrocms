@@ -72,5 +72,3 @@ $config['theme'] = NULL;
 $config['theme_locations'] = array(
 	'public/themes/' => '../../public/themes/'
 );
-
-?>

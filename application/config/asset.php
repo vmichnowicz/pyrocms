@@ -12,7 +12,7 @@
 |
 */
 
-$config['asset_dir'] = APPPATH_URI . 'assets/';
+$config['asset_dir'] = '../../public/assets/';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ $config['asset_dir'] = APPPATH_URI . 'assets/';
 |
 */
 
-$config['asset_url'] = config_item('base_url').APPPATH . 'assets/';
+$config['asset_url'] = config_item('base_url').'public/assets/';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ $config['asset_url'] = config_item('base_url').APPPATH . 'assets/';
 |
 */
 
-$config['theme_asset_dir'] = APPPATH_URI . 'themes/';
+$config['theme_asset_dir'] = '../../public/themes/';
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ $config['theme_asset_dir'] = APPPATH_URI . 'themes/';
 |
 */
 
-$config['theme_asset_url'] = config_item('base_url').APPPATH.'themes/';
+$config['theme_asset_url'] = config_item('base_url').'public/themes/';
 
 /*
 |--------------------------------------------------------------------------
